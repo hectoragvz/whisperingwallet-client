@@ -8,7 +8,7 @@ function HeroSection() {
         </span>{" "}
         with Whispering Wallet
       </h1>
-      <p className="mt-5 text-lg text-center text-stone-600">
+      <p className="mt-5 text-lg text-center">
         Simply speak and record what you just spent on, we´ll handle the rest
       </p>
     </div>

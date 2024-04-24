@@ -3,7 +3,7 @@ import { VictoryPie, VictoryLabel } from "victory";
 
 function Chart({ data }) {
   return (
-    <div className="size-60">
+    <div className="sm:size-60 size-72">
       <VictoryPie
         animate={{ duration: 200 }}
         colorScale="cool"

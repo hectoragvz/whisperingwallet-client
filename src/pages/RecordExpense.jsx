@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@chakra-ui/react";
 import { useState, useRef } from "react";
 import Navigation from "../components/Navigation";
-
+import AudioPermission from "../components/AudioPermission";
 import { FaSquare } from "react-icons/fa";
 
 function RecordExpense() {
@@ -104,8 +104,8 @@ function RecordExpense() {
     <>
       <Navigation />
 
-      <div className="max-w-5xl pt-40 m-2 flex flex-col justify-center items-center mx-auto">
-        <div className="text-center ">
+      <div className="pt-40 m-2 flex flex-col justify-center items-center">
+        <div className="text-center w-60 sm:w-auto">
           <h1 className="text-4xl font-bold mb-2">
             Record your latest expense
           </h1>
@@ -122,6 +122,7 @@ function RecordExpense() {
               <span className="font-bold">I bought a 10 dollar book</span>,
               where we can hear a product and a total
             </p>
+            <AudioPermission />
           </div>
 
           {recording ? (

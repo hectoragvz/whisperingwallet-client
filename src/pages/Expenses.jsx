@@ -109,10 +109,10 @@ function TasksHome() {
   return (
     <>
       <Navigation />
-      <div className="m-2 pt-10 max-w-5xl mx-auto px-6">
-        <div className="flex justify-start gap-3">
+      <div className="m-2 pt-10 max-w-5xl mx-auto px-3 pb-10">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 ">
           <TotalCard total={totalExpense} description={"Total Expenses"} />
-          <div className="bg-white size-72 p-0 rounded-lg grow pl-5 flex items-center justify-center">
+          <div className="bg-white p-0 rounded-lg grow pl-5 flex items-center justify-center order-2">
             <Chart data={result} />
           </div>
         </div>
