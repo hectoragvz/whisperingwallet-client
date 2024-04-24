@@ -112,9 +112,11 @@ function TasksHome() {
       <div className="m-2 pt-10 max-w-5xl mx-auto px-3 pb-10">
         <div className="flex flex-col sm:flex-row justify-center gap-3 ">
           <TotalCard total={totalExpense} description={"Total Expenses"} />
-          <div className="bg-white p-0 rounded-lg grow pl-5 flex items-center justify-center order-2">
-            <Chart data={result} />
-          </div>
+          {selectedExpenses.length !== 0 && (
+            <div className="bg-white p-0 rounded-lg grow pl-5 flex items-center justify-center order-2">
+              <Chart data={result} />
+            </div>
+          )}
         </div>
 
         <h2 className="pt-5 font-semibold text-2xl">
