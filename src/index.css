@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*#fff*/
+:root {
+  background: #f3f2f9;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji";
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
