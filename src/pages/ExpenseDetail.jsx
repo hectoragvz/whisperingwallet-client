@@ -41,15 +41,30 @@ function ExpenseDetail() {
 
   const singleTaskLength = Object.keys(singleTask).length;
 
+  const goBack = () => {
+    navigate("/expenses");
+  };
+
   return (
     <>
       <Navigation />
-      <div className="h-screen items-center justify-center pt-20 text-center">
+      <div className="flex justify-center">
+        <Button
+          onClick={goBack}
+          className="mt-10"
+          size="xs"
+          colorScheme="messenger"
+          variant="outline"
+        >
+          Return
+        </Button>
+      </div>
+      <div className="h-screen items-center justify-center pt-10 text-center">
         {singleTaskLength === 0 ? (
           <p>Loading...</p>
         ) : (
           <div>
-            <h1 className="text-8xl font-bold">{`$${
+            <h1 className="sm:text-8xl text-6xl font-bold">{`$${
               singleTask && singleTask.total
             }`}</h1>
             <div className="flex flex-col pt-3">

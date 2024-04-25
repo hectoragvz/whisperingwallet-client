@@ -6,7 +6,7 @@ function TotalCard({ total, description }) {
         <p className="text-black bg-white text-2xl font-semibold ml-1">
           {description}
         </p>
-        <h1 className="font-bold text-9xl bg-white  ml-1">
+        <h1 className="font-bold sm:text-9xl text-7xl bg-white ml-1">
           ${parseFloat(total)}
         </h1>
         <p className="text-neutral-500 bg-white ml-1">Whispering Wallet</p>
