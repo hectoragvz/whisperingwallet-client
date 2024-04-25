@@ -8,7 +8,6 @@ function Chart({ data }) {
         animate={{ duration: 200 }}
         colorScale="cool"
         data={data}
-        cornerRadius={({ datum }) => datum.y * 1}
         labelComponent={
           <VictoryLabel angle={0} style={[{ fill: "black", fontSize: 20 }]} />
         }
