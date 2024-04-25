@@ -6,6 +6,7 @@ import TotalCard from "../components/TotalCard";
 import { useForm } from "react-hook-form";
 import { Button } from "@chakra-ui/react";
 import Chart from "../components/Chart";
+import AddTaskBtn from "../components/AddTaskBtn";
 
 function TasksHome() {
   const thisMonth = new Date().getMonth() + 1;
@@ -126,7 +127,7 @@ function TasksHome() {
           </span>
         </h2>
 
-        <div className="flex pt-2 pb-5 items-center align-center">
+        <div className="flex pt-2 pb-5 items-center align-center justify-between">
           <form
             onSubmit={onSubmit}
             className=" flex pt-2 font-semibold items-center justify-center align-middle"
@@ -144,6 +145,7 @@ function TasksHome() {
               ))}
             </select>
             <Button
+              variant="outline"
               size="sm"
               colorScheme="messenger"
               type="submit"
@@ -153,6 +155,7 @@ function TasksHome() {
               Filter
             </Button>
           </form>
+          <AddTaskBtn />
         </div>
 
         <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">

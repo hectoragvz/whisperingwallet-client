@@ -1,5 +1,6 @@
 import MainNavigation from "../components/MainNavigation";
 import HeroSection from "../components/HeroSection";
+import { IoLogoGithub } from "react-icons/io";
 
 function LandingPage() {
   return (
@@ -9,8 +10,8 @@ function LandingPage() {
         <div className="max-w-5xl mx-auto pt-20 px-6">
           <HeroSection />
         </div>
-        <div className="pb-10 mt-auto shrink-0 text-center text-neutral-500 text-base italic">
-          <p>
+        <div className="flex items-center pb-10 mt-auto shrink-0 text-center text-neutral-500 text-base italic">
+          <p className="pr-2">
             Powered by{" "}
             <a
               className="underline "
@@ -33,9 +34,15 @@ function LandingPage() {
               href="https://mistral.ai/"
               target="_blank"
             >
-              Mistral AI
+              Mistral AI.
             </a>
           </p>
+          <a
+            href="https://github.com/hectoragvz/whisperingwallet-client"
+            target="_blank"
+          >
+            <IoLogoGithub />
+          </a>
         </div>
       </div>
     </div>
